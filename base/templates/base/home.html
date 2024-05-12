@@ -6,7 +6,8 @@
 	<title>Fatih Tunahan Gezer</title>
 	<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Site Icons -->
+    <link rel="apple-touch-icon" href="{% static 'images/shrtcut.png' %}">
+	<link rel="shortcut icon" href="{% static 'images/shrtcut.png' %}" type="image/x-icon">
 </head>
 <style>
 	body {
@@ -52,8 +53,17 @@
 	.cv-link a:hover {
 		background-color: #0056b3;
 	}
+
+	#bg{
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f0f0f0;
+    background-attachment: fixed;
+	}
+	
 </style>
-<body>
+<body id="bg" style="background-image: url('{% static 'images/spacebackg.jpg' %}');">
 	<br>
 	<div class="container">
 		<div class="row">
@@ -89,7 +99,7 @@
 						<div class="container">
 							<h1>You can access my CV through this Google Drive link.</h1>
 							<div class="cv-link">
-								<a href="https://drive.google.com/file/d/1z1oR0MSZSNep-o9dbBtdsAGTFwxqMUtr/view" target="_blank">CV Link</a>
+								<a href="https://drive.google.com/file/d/1GQft7ECHjOfHtuKTjrroMQ-4c9c8tnPr/view?usp=sharing" target="_blank">CV Link</a>
 							</div>
 						</div>
 					<ul class="social-links">
@@ -116,6 +126,11 @@
 						<li>
 							<a href="https://letterboxd.com/tunahangezer/" target="_blank">
 								<img class="social" src="{% static 'images/letterboxd.png' %}" alt="Letterboxd">
+							</a>
+						</li>
+						<li>
+							<a href="https://tunahangezer.notion.site/My-Works-On-Notion-0d03ffdde4e34c39a7033319960f1db0" target="_blank">
+								<img class="social" src="{% static 'images/notion.png' %}" alt="Notion">
 							</a>
 						</li>
 					</ul>
