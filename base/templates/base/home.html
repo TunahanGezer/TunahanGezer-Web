@@ -1,0 +1,338 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fatih Tunahan Gezer</title>
+	<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="{% static 'images/shrtcut.png' %}">
+	<link rel="shortcut icon" href="{% static 'images/shrtcut.png' %}" type="image/x-icon">
+</head>
+
+
+<style>
+
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f8f9fa;
+		color: #333;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		max-width: 900px;
+		margin: 20px auto;
+		padding: 20px;
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		color: #007bff;
+		font-size: 18px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.cv-link {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.cv-link a {
+		display: inline-block;
+		background-color: #007bff;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+
+	.cv-link a:hover {
+		background-color: #0056b3;
+	}
+
+	#bg{
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f0f0f0;
+    background-attachment: fixed;
+	}
+
+	#experience {
+    margin-top: 50px;
+	}
+	#experience .experience-item {
+		margin-bottom: 20px;
+	}
+	#contact {
+		text-align: center;
+	}
+	#contact .contact-item{
+		margin-bottom: 20px;
+	}
+
+	.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increase padding for larger button */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+    text-align: center; /* Center text */
+    display: inline-block; /* Ensure button size adjusts to padding */
+	}
+
+	.btn-primary:hover {
+		background-color: #0056b3;
+	}
+
+	.job {
+	border: 2px solid #ddd;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #f9f9f9;
+	}
+
+	.job {
+		border: 2px solid #ddd; /* Kenarlık rengi */
+		padding: 20px; /* İçerik kenar boşluğu */
+		margin-bottom: 20px; /* Alt boşluk */
+		border-radius: 10px; /* Köşe yuvarlama */
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+		background-color: #f9f9f9; /* Arka plan rengi */
+	}
+
+	#experience h2 {
+		font-size: 32px;
+		color: #34495e;
+		text-align: center;
+		margin-bottom: 20px;
+		font-family: 'Arial', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+		border-bottom: 3px solid #3498db; /* Alt çizgi */
+	}
+        /* Centering the Contact Me heading */
+    #contact {
+        text-align: center; /* Center the heading */
+        padding: 20px; /* Optional: Add padding around the section */
+    }
+
+	#contact h2 {
+		font-size: 32px;
+		color: #34495e;
+		text-align: center;
+		margin-bottom: 20px;
+		font-family: 'Arial', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+		border-bottom: 3px solid #3498db; /* Alt çizgi */
+	}
+
+        /* Ensure form elements are aligned to the left within the centered section */
+    #contact form {
+            max-width: 600px; /* Optional: Limit form width */
+            margin: 0 auto; /* Center the form container */
+            text-align: left; /* Ensure text and inputs are left-aligned */
+    }
+
+    .form-container {
+        border: 1px solid #ddd; /* Border for the container */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the container */            
+		background-color: #f9f9f9; /* Background color */
+        margin-bottom: 20px; /* Space below the container */
+        }
+
+    .form-group {
+        margin-bottom: 15px; /* Space between form elements */
+	    }
+
+    .btn-primary {
+        display: block; /* Ensure the button is a block-level element */
+        width: 100%; /* Full width button */
+    }
+
+</style>
+
+
+<body id="bg" style="background-image: url('{% static 'images/spacebackg.jpg' %}');">
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/myphto.jpg' %}" >
+					<hr>
+					<h4>I'm Fatih Tunahan Gezer!</h4>
+					<p>	</p>
+					<p><i>I love coding, researching and improving myself in software.</i></p>
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>Educations</h4>
+					<hr>
+					<p>	</p>
+					<h5>High School</h5>
+					<p>
+						Ozel Elvankent Sinav Temel High School
+						|08.2015-06.2019| Ankara</p>
+						<p>	</p>
+						<p>	</p>
+						<h5>University</h5>
+					<p>
+						Ankara Science University
+						|08.2020-Continues| Ankara
+						Electrical-Electronics Engineering (100% English)</p>
+						<p>	</p>
+						<hr>
+						<div class="container">
+							<h1>You can access my CV through this Google Drive link.</h1>
+							<div class="cv-link">
+								<a href="https://drive.google.com/file/d/1RWCFj7BWXHriaQrppfmm805NKr0LL1g_/view" target="_blank">Turkish CV</a>
+								<br>
+								<br>
+                                <a href="https://drive.google.com/file/d/1fRZNCeztZoJ9F3TO2ObMsrA-GBFKr-mc/view" target="_blank">English CV</a>
+							</div>
+						</div>
+					<ul class="social-links">
+						<h4>Social Media Links</h4>
+						<hr>
+						<li>
+							<a href="https://www.facebook.com/tunahan.gezer.14/" target="_blank">
+								<img class="social" src="{% static 'images/facebook.png' %}" alt="Facebook">
+							</a>
+						</li>
+						<a href="https://www.linkedin.com/in/tunahangezer/" target="_blank">
+							<img class="social" src="{% static 'images/linkedin.png' %}" alt="Linkedin">
+						</a>
+						<li>
+							<a href="https://twitter.com/GezerTunahan" target="_blank">
+								<img class="social" src="{% static 'images/twitter.png' %}" alt="Twitter">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/TunahanGezer" target="_blank">
+								<img class="social" src="{% static 'images/github.png' %}" alt="Github">
+							</a>
+						</li>
+						<li>
+							<a href="https://letterboxd.com/tunahangezer/" target="_blank">
+								<img class="social" src="{% static 'images/letterboxd.png' %}" alt="Letterboxd">
+							</a>
+						</li>
+						<li>
+							<a href="https://tunahangezer.notion.site/My-Works-On-Notion-0d03ffdde4e34c39a7033319960f1db0" target="_blank">
+								<img class="social" src="{% static 'images/notion.png' %}" alt="Notion">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h4>Projects</h4>
+					<hr>
+					<h4>Student Information System Project</h4>
+					<p>	</p>
+					<p>This is the project I did with my teammates in the 1st year CENG 102 Algorithms and Programming with Java II course of my undergraduate education. The project is coded in Java language. The aim of our project is to facilitate the work of both students and instructors with the student information system.</p>
+					<p>	</p>
+					<h4>Vehicle License Plate Recognition System Project</h4>
+					<p></p>
+					<p>It is a project I did individually in the 2nd year EEE 205 Computer Tools for Electrical Engineering course of my undergraduate education. The project is coded in Matlab language. The aim of the project is to relieve manpower at the entrances and exits of controlled crossing points and to ensure easy, fast and safe entry and exit.</p>
+					<p></p>
+					<h4>OOP & Java Mentoring</h4>
+					<p></p>
+					<p>I tried to teach the basic concepts of Object-Oriented Programming (OOP) and the Java programming language one-on-one in the 1st grade.</p>
+					</div>
+		</div>
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h4>My Short Term Goals</h4>
+					<p>	</p>
+					<hr>
+					<p>I am currently in my third year pursuing a degree in electrical and electronic engineering, where I have amassed a comprehensive understanding of the intricacies within this discipline. My journey thus far has equipped me with a robust knowledge base and a profound confidence in my abilities. Alongside my academic pursuits, I harbor a genuine passion for software development, which has led me to engage in continuous learning and exploration in this field.</p>
+					<p>	</p>
+					<p>The fusion of my expertise in electrical and electronic engineering with my burgeoning skills in software development has been instrumental in my ability to innovate and excel in various projects. I find immense satisfaction in merging theoretical knowledge with practical application, consistently seeking out opportunities to apply my understanding to real-world challenges.</p>
+					<p>	</p>
+					<p>One of my key strengths lies in my capacity to devise practical solutions in engineering projects by leveraging both my theoretical knowledge and hands-on experience. This multifaceted approach not only enhances the efficiency and effectiveness of my contributions but also allows me to offer unique perspectives and insights to problem-solving scenarios.</p>
+					<p>	</p>
+					<p>In essence, my journey as a student of electrical and electronic engineering is characterized by a steadfast dedication to excellence, a passion for innovation, and an unwavering commitment to continuous improvement. I am eager to continue exploring the synergies between software development and engineering, confident in my ability to make meaningful contributions to both fields as I embark on my professional journey.</p>
+					<p>
+				</div>
+			</div>
+
+	<section id="experience">
+	<h2>Work Experience</h2>
+
+	<div class="job">
+		<h3>Intern Software Developer</h3>
+		<h4>WiserSense | Information Technologies</h4>
+		<p>2023 – 2023 | Ankara</p>
+		<ul>
+		<li><strong>• Sensor and Hardware Usage: </strong>I developed embedded system applications for
+			collecting and processing sensor data using ADXL357
+			and IIS3DWBTR sensors, along with the ESP32
+			microcontroller and various other sensors.</li>
+			<p>	</p>
+		<li><strong>• Website Development (Django): </strong>I developed the company's website using the Django
+			framework. During this process, I designed a user-
+			friendly interface and ensured seamless database
+			integration.</li>
+		</ul>
+	</div>
+
+	<div class="job">
+		<h3>Intern Electrical and Electronics Engineer</h3>
+		<h4>Kalyon Holding</h4>
+		<p>2024 - 2024 | Ankara</p>
+		<ul>
+
+		</ul>
+	</div>
+	</section>
+
+	<div id="contact">
+		
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d009d181-9237-41a5-87f4-3187e9dfa7b4">
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+	</div>
+</body>
+</html>
