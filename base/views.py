@@ -18,4 +18,7 @@ def home(request):
 
 def home(request):
 	return render(request, 'base/home.html')
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8ca44657235d26f008811628b655cdf86c5f9d10
