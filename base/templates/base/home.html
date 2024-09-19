@@ -9,14 +9,10 @@
     <link rel="apple-touch-icon" href="{% static 'images/shrtcut.png' %}">
 	<link rel="shortcut icon" href="{% static 'images/shrtcut.png' %}" type="image/x-icon">
 </head>
-<<<<<<< HEAD
 
 
 <style>
 
-=======
-<style>
->>>>>>> 0f5834eaf2fbe692795129ce725bcf8c1a13e1db
 	body {
 		font-family: Arial, sans-serif;
 		background-color: #f8f9fa;
@@ -69,7 +65,6 @@
     background-attachment: fixed;
 	}
 
-<<<<<<< HEAD
 	#experience {
     margin-top: 50px;
 	}
@@ -154,11 +149,8 @@
     }
 
     .form-container {
-        border: 1px solid #ddd; /* Border for the container */
-        border-radius: 10px; /* Rounded corners */
-        padding: 20px; /* Padding inside the container */            
-		background-color: #f9f9f9; /* Background color */
-        margin-bottom: 20px; /* Space below the container */
+		width: 100%; /* Genişliği ayarlamak için */
+		max-width: 400px; /* Formun maksimum genişliği */
         }
 
     .form-group {
@@ -170,12 +162,91 @@
         width: 100%; /* Full width button */
     }
 
+	.social-links h4 {
+    text-align: center;
+    margin-bottom: 10px;
+	}
+
+	.social-links li {
+		display: inline-block;
+		margin: 5px;
+		list-style: none;
+	}
+
+	.social {
+		width: 50px; /* İkonların başlangıç boyutu */
+		height: 50px;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	.social:hover {
+		transform: scale(1.35); /* İkonların üzerine gelindiğinde %20 büyütme */
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Hover animasyonu için gölge ekleme */
+	}
+	.card h4 {
+	text-align: center;
+    font-size: 28px; /* Daha büyük bir font boyutu */
+    color: #007bff; /* Renk değişimi */
+    transition: transform 0.3s ease; /* Animasyon efekti */
+	}
+
+	.card h4:hover {
+		transform: scale(1.1); /* Üzerine gelindiğinde büyütme */
+	}
+
+	.card h5 {
+		font-size: 24px; /* H5 başlığının boyutu */
+		color: #333; /* H5 başlığının rengi */
+		margin-top: 15px; /* Üstten boşluk ekleyin */
+	}
+
+	.card p {
+		line-height: 1.5; /* Satır yüksekliğini artırın */
+	}
+	
+	@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+	}
+
+	.card h4:hover {
+		animation: shake 0.5s; /* Titreme animasyonu */
+	}
+
+	.card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Gölgeleme */
+    transition: box-shadow 0.3s; /* Geçiş süresi */
+	}
+
+	.card:hover {
+		box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Hoverda daha belirgin gölge */
+	}
+
+	.education-item {
+    margin-bottom: 20px; /* Öğeler arasında boşluk */
+	}
+
+	.education-item h5 {
+		font-weight: bold; /* Başlıkları kalın yapar */
+		color: #007bff; /* Başlık rengini mavi yapar */
+	}
+
+	.education-item p {
+		margin: 5px 0; /* Paragraflar arasında boşluk */
+	}
+
+	.card {
+		border: 1px solid #007bff; /* Kart kenarını mavi yapar */
+		border-radius: 8px; /* Kenarları yuvarlar */
+		padding: 20px; /* İç boşluk ekler */
+		background-color: #f8f9fa; /* Açık arka plan rengi */
+	}
+
 </style>
 
 
-=======
-</style>
->>>>>>> 0f5834eaf2fbe692795129ce725bcf8c1a13e1db
 <body id="bg" style="background-image: url('{% static 'images/spacebackg.jpg' %}');">
 	<br>
 	<div class="container">
@@ -192,37 +263,36 @@
 
 			<div class="col-md-9">
 				<div class="card card-body h-100  border-info">
-					<h4>Educations</h4>
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+					<h4><i class="fas fa-graduation-cap"></i> Educations</h4>
 					<hr>
-					<p>	</p>
-					<h5>High School</h5>
-					<p>
-						Ozel Elvankent Sinav Temel High School
-						|08.2015-06.2019| Ankara</p>
-						<p>	</p>
-						<p>	</p>
-<<<<<<< HEAD
-=======
-
->>>>>>> 0f5834eaf2fbe692795129ce725bcf8c1a13e1db
+					<div class="education-item">
+						<h5>High School</h5>
+						<p><strong>Ozel Elvankent Sinav Temel High School</strong></p>
+						<p><em>08.2015 - 06.2019 | Ankara</em></p>
+					</div>
+					<div class="education-item">
 						<h5>University</h5>
-					<p>
-						Ankara Science University
-						|08.2020-Continues| Ankara
-						Electrical-Electronics Engineering (100% English)</p>
-						<p>	</p>
+						<p><strong>Ankara Science University</strong></p>
+						<p><em>08.2020 - Continues | Ankara</em></p>
+						<p><em>Electrical-Electronics Engineering (100% English) - (100% Scholarship)</em></p>
+					</div>
 						<hr>
 						<div class="container">
-							<h1>You can access my CV through this Google Drive link.</h1>
+							<h1><i>You can access my CV through this Google Drive link.</i></h1>
 							<div class="cv-link">
-								<a href="https://drive.google.com/file/d/1RWCFj7BWXHriaQrppfmm805NKr0LL1g_/view" target="_blank">Turkish CV</a>
+								<a href="https://drive.google.com/file/d/1YPZXccrcX2bnsQmcfYvs1E10bYNAulD6/view?usp=sharing" target="_blank">Turkish CV</a>
 								<br>
 								<br>
-                                <a href="https://drive.google.com/file/d/1fRZNCeztZoJ9F3TO2ObMsrA-GBFKr-mc/view" target="_blank">English CV</a>
+                                <a href="https://drive.google.com/file/d/17pKUaPvglZ9pPLYJVYVnIHlEpviwMXXQ/view?usp=sharing" target="_blank">English CV</a>
 							</div>
 						</div>
 					<ul class="social-links">
-						<h4>Social Media Links</h4>
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+						<h4>
+							<i class="fas fa-share-alt" style="margin-right: 8px;"></i>
+							Social Media Links
+						</h4>
 						<hr>
 						<li>
 							<a href="https://www.facebook.com/tunahan.gezer.14/" target="_blank">
@@ -260,29 +330,34 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card card-body h-100">
-					<h4>Projects</h4>
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+					<h4>
+						<i class="fas fa-project-diagram" style="margin-right: 8px;"></i>
+						Projects
+					</h4>					
 					<hr>
 					<h4>Student Information System Project</h4>
 					<p>	</p>
 					<p>This is the project I did with my teammates in the 1st year CENG 102 Algorithms and Programming with Java II course of my undergraduate education. The project is coded in Java language. The aim of our project is to facilitate the work of both students and instructors with the student information system.</p>
 					<p>	</p>
+					<hr>
 					<h4>Vehicle License Plate Recognition System Project</h4>
 					<p></p>
 					<p>It is a project I did individually in the 2nd year EEE 205 Computer Tools for Electrical Engineering course of my undergraduate education. The project is coded in Matlab language. The aim of the project is to relieve manpower at the entrances and exits of controlled crossing points and to ensure easy, fast and safe entry and exit.</p>
 					<p></p>
+					<hr>
 					<h4>OOP & Java Mentoring</h4>
 					<p></p>
 					<p>I tried to teach the basic concepts of Object-Oriented Programming (OOP) and the Java programming language one-on-one in the 1st grade.</p>
 					</div>
-<<<<<<< HEAD
 		</div>
-=======
-			</div>
->>>>>>> 0f5834eaf2fbe692795129ce725bcf8c1a13e1db
 			<div class="col-md-6">
 				<div class="card card-body h-100">
-					<h4>My Short Term Goals</h4>
-					<p>	</p>
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+					<h4>
+						<i class="fas fa-bullseye" style="margin-right: 8px;"></i>
+						My Short Term Goals
+					</h4>
 					<hr>
 					<p>I am currently in my third year pursuing a degree in electrical and electronic engineering, where I have amassed a comprehensive understanding of the intricacies within this discipline. My journey thus far has equipped me with a robust knowledge base and a profound confidence in my abilities. Alongside my academic pursuits, I harbor a genuine passion for software development, which has led me to engage in continuous learning and exploration in this field.</p>
 					<p>	</p>
@@ -294,10 +369,23 @@
 					<p>
 				</div>
 			</div>
-<<<<<<< HEAD
 
 	<section id="experience">
-	<h2>Work Experience</h2>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+
+	<div class="job">
+		<h3>Intern Electrical and Electronics Engineer</h3>
+		<h4>Kalyon PV | Solar Technologies Factory</h4>
+		<p>2024 - 2024 | Ankara</p>
+		<ul>
+        <li><strong>• PCB and Circuit Design: </strong>I designed and developed a PCB and circuit tailored to the specific needs of the company,
+        ensuring optimal functionality and reliability in the electronic system.</li>
+			<p>	</p>
+		<li><strong>• Solar Panel Manufacturing Knowledge: </strong>I have knowledge of the various stages of solar panel production, including ingot, wafer, cell, and panel manufacturing,
+		and understand how Kaizen principles can be applied to continuously improve processes and efficiency in solar panel production.</li>
+		</ul>
+	</div>
 
 	<div class="job">
 		<h3>Intern Software Developer</h3>
@@ -315,20 +403,11 @@
 			integration.</li>
 		</ul>
 	</div>
-
-	<div class="job">
-		<h3>Intern Electrical and Electronics Engineer</h3>
-		<h4>Kalyon Holding</h4>
-		<p>2024 - 2024 | Ankara</p>
-		<ul>
-
-		</ul>
-	</div>
 	</section>
 
 	<div id="contact">
-		
-        <h2>Contact Me</h2>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <h2><i class="fas fa-comment-dots"></i> Contact Me</h2>
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="d009d181-9237-41a5-87f4-3187e9dfa7b4">
 
@@ -350,10 +429,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
         </form>
-=======
-		</div>
-		<br>
->>>>>>> 0f5834eaf2fbe692795129ce725bcf8c1a13e1db
 	</div>
 </body>
 </html>
