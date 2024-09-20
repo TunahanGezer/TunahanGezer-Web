@@ -266,7 +266,40 @@
         #video-background {
             display: none; /* Küçük ekranlarda videoyu gizler */
             }
-    }	
+    }
+	.progress {
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 10px 0;
+    }
+    .progress-bar {
+        background-color: #4caf50;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+    }
+	.cv-link a {
+    transition: box-shadow 0.3s ease; /* Gölge için geçiş animasyonu */
+	display: inline-block; /* Linkleri blok olarak gösterir */
+	}
+
+	.cv-link a:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Üzerine gelince gölge efekti */
+	}
+
+	.cv-link a:hover {
+		transform: scale(1.1); /* Üzerine gelince biraz büyütür */
+		animation: pulse 1s infinite; /* Nabız efekti uygular */
+	}
+
+	@keyframes pulse {
+		0% { transform: scale(1); } /* Normal boyut */
+		50% { transform: scale(1.15); } /* Orta aşamada biraz daha büyür */
+		100% { transform: scale(1); } /* Sonunda tekrar eski boyuta döner */
+	}
+
 
 </style>
 
@@ -459,8 +492,4 @@
         </form>
 	</div>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 8ca44657235d26f008811628b655cdf86c5f9d10
